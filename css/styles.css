@@ -44,7 +44,6 @@ img {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
-  outline: 4px solid teal;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -60,6 +59,8 @@ img {
 .header-nav {
   margin-right: auto;
   display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .link:hover,
 .link:focus {
@@ -218,7 +219,6 @@ img {
   padding-bottom: 120px;
   padding-left: 0;
   padding-right: 0;
-  background-color: tomato;
 }
 .galery-caption {
   margin-bottom: 72px;
@@ -306,12 +306,20 @@ img {
 /* portfolio */
 .portfolio {
 }
+.portfolio-container {
+}
 .list-portfolio {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+  padding-top: 96px;
 }
 .list {
   list-style: none;
 }
 .btn-filter {
+  padding: 12px 24px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -321,23 +329,38 @@ img {
   color: var(--iris);
   background-color: var(--cloud);
   cursor: pointer;
+  border: 1px solid var(--cornflower);
+  border-radius: 4px;
 }
 .btn-filter:hover,
 .btn-filter:focus {
+  border: 1px solid transparent;
   color: var(--white);
   background-color: var(--ocean);
 }
 .list-portfolio-galery {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .list {
   list-style: none;
+}
+.portfolio-item {
 }
 .link-portfolio {
 }
 .link {
   text-decoration: none;
 }
+.portfolio-card-container {
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower);
+  border-top: none;
+}
 .caption-portfolio {
+  margin-bottom: 8px;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -356,7 +379,13 @@ img {
 .page-footer {
   background-color: var(--navy-blue);
 }
-.logo-link {
+.footer-container {
+  padding: 100px 0;
+}
+.logo-link-footer {
+  margin-left: 156px;
+  margin-bottom: 16px;
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -384,6 +413,8 @@ img {
 }
 
 .text-footer {
+  margin-left: 156px;
+  max-width: 264px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
