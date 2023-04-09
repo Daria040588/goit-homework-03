@@ -91,9 +91,7 @@ img {
 .link {
   text-decoration: none;
 }
-.header-list {
-  gap: 40px;
-}
+
 .nav-link {
   display: flex;
   gap: 40px;
@@ -379,7 +377,9 @@ img {
   letter-spacing: 0.02em;
   color: var(--slate);
 }
-
+.header-list {
+  gap: 40px;
+}
 /* footer */
 .page-footer {
   background-color: var(--navy-blue);
@@ -391,7 +391,7 @@ img {
 .logo-link-footer {
   margin-left: 156px;
   margin-bottom: 16px;
-  display: inline-block;
+
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -403,6 +403,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris);
+  display: inline-block;
 }
 .logo {
   display: inline-block;
