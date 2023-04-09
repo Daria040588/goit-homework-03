@@ -91,6 +91,9 @@ img {
 .link {
   text-decoration: none;
 }
+.header-list {
+  gap: 40px;
+}
 .nav-link {
   display: flex;
   gap: 40px;
