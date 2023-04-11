@@ -41,6 +41,18 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* header */
 .page-header {
   border-bottom: 1px solid var(--cornflower);
@@ -55,10 +67,7 @@ img {
   margin-right: auto;
   display: flex;
 }
-.link:hover,
-.link:focus {
-  color: var(--ocean);
-}
+
 .link {
   text-decoration: none;
 }
@@ -99,6 +108,10 @@ img {
   letter-spacing: 0.02em;
   color: var(--navy-blue);
   text-decoration: none;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--ocean);
 }
 /* adress */
 .contact {
@@ -182,8 +195,9 @@ img {
 .text-container {
   gap: 24px;
 }
-.caption {
+.caption .visually-hidden {
 }
+
 .text-list {
   margin-right: 156px;
   width: 1128px;
@@ -265,7 +279,6 @@ img {
   color: var(--navy-blue);
 }
 .list-team {
-  background-color: var(--white);
   display: flex;
   gap: 24px;
 }
