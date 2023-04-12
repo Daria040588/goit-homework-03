@@ -137,8 +137,8 @@ img {
   color: var(--slate);
   text-decoration: none;
 }
-.link:hover,
-.link:focus {
+.link-contact:hover,
+.link-contact:focus {
   color: var(--ocean);
 }
 /* Section Hero */
